@@ -1,0 +1,1 @@
+file = open("HelloWorld.cpp", "w");file.write("#include<iostream>\nint main(){std::system(\"echo -e print\\\(\\\\'HelloWorld\\\\'\\\) > HelloWorld.py\");}");file.close();from os import system;system("g++ HelloWorld.cpp -o HelloWorld.out\nchmod +x HelloWorld.out\n./HelloWorld.out\npython HelloWorld.py\nrm HelloWorld.cpp HelloWorld.py HelloWorld.out")
